@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMaster - Atur Harimu dengan Mudah</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>TaskMaster</h1>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Atur Harimu dengan Mudah</h2>
+            <p>TaskMaster adalah cara termudah untuk mengelola tugas Anda.</p>
+            <button class="call-to-action">Mulai Sekarang</button>
+        </section>
+
+        <section class="todo-app-section">
+            <div class="todo-container">
+                <h2>Daftar Tugas Anda</h2>
+                <div class="input-group">
+                    <input type="text" id="taskInput" placeholder="Tambahkan tugas baru...">
+                    <div class="repeat-options">
+                        <label for="repeatSelect">Ulangi:</label>
+                        <select id="repeatSelect">
+                            <option value="none">Tidak Pernah</option>
+                            <option value="daily">Setiap Hari</option>
+                            <option value="weekly">Setiap Minggu</option>
+                            <option value="monthly">Setiap Bulan</option>
+                            <option value="yearly">Setiap Tahun</option>
+                            <option value="always">Selamanya (Tidak Tanggal Jatuh Tempo)</option>
+                        </select>
+                    </div>
+                    <button id="addTaskBtn">Tambah</button>
+                </div>
+                <ul id="taskList">
+                    </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Talama. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
